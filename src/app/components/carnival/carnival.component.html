@@ -1,0 +1,45 @@
+<div class="main-container">
+  <div class="form-container">
+    <form class="d-flex" [formGroup]="participantForm">
+      <div class="form-input d-flex flex-column">
+          <label for="name">Name</label>
+          <input formControlName="name" name="name" type="text">
+      </div>
+      <div class="form-input d-flex flex-column">
+          <label for="surname">Surname</label>
+          <input formControlName="surname" name="surname" type="text">
+      </div>
+      <div class="form-input d-flex flex-column">
+          <label for="sex">Sex</label>
+          <select class="form-control" id="sex" formControlName="sex">
+            <option [value]="Sex.Female">{{Sex.Female}}</option>
+            <option [value]="Sex.Male">{{Sex.Male}}</option>
+          </select>
+      </div>
+      <div class="form-input d-flex flex-column">
+          <label for="hat">Hat type</label>
+          <select class="form-control" id="hat" formControlName="hat">
+              <option [value]="Hats.None">{{Hats.None}}</option>
+              <option [value]="Hats.Fullcap">{{Hats.Fullcap}}</option>
+              <option [value]="Hats.Strawhat">{{Hats.Strawhat}}</option>
+              <option [value]="Hats.Magic">{{Hats.Magic}}</option>
+            </select>
+      </div>
+      <div class="form-input d-flex flex-column">
+          <label for="chest">Chest color</label>
+          <input formControlName="chest" name="chest" type="text">
+      </div>
+      <div class="form-input d-flex flex-column">
+          <label for="pants">Pants color</label>
+          <input formControlName="pants" name="pants" type="text">
+      </div>
+      <button (click)="createParticipant()" class="add-button" type="submit">ADD</button>
+    </form>
+
+  </div>
+  <div class="carnival-container h-100 d-flex align-items-center justify-content-center">
+    <div *ngFor="let participant of partyParticipants; let index">
+      <app-participant [participant]="participant"></app-participant>
+    </div>
+  </div>
+</div>

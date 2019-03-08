@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CarnivalComponent } from './carnival.component';
+import { CookieComponent } from './cookieman.component';
 
-describe('CarnivalComponent', () => {
-  let component: CarnivalComponent;
-  let fixture: ComponentFixture<CarnivalComponent>;
+describe('CookieComponent', () => {
+  let component: CookieComponent;
+  let fixture: ComponentFixture<CookieComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CarnivalComponent ]
+      declarations: [ CookieComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(CarnivalComponent);
+    fixture = TestBed.createComponent(CookieComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

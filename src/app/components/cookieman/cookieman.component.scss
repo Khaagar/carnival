@@ -1,0 +1,112 @@
+.body{
+  width:424px;
+  height:575px;
+  position:relative;
+}
+.body{
+  div{
+    position:absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width:100%;
+    height:100%;
+  }
+}
+
+  .head{
+    z-index:1;
+    border:1px solid black;
+    clip-path: polygon(165px 24px,148px 32px,131px 47px,112px 67px,107px 82px,100px 98px,100px 124px,104px 140px,118px 171px,141px 195px,176px 210px,215px 211px,231px 205px,244px 198px,256px 190px,268px 179px,280px 163px,287px 147px,290px 135px,291px 107px,285px 79px,266px 48px,250px 35px,224px 22px,207px 19px,184px 21px);
+  }
+  .chest{
+    z-index:0;
+    border:1px solid black;
+    clip-path: polygon(180px 215px,180px 220px,176px 225px,172px 225px,163px 227px,150px 229px,140px 235px,123px 242px,110px 250px,93px 261px,72px 281px,60px 293px,52px 307px,49px 316px,47px 329px,50px 341px,57px 350px,66px 359px,84px 366px,98px 365px,112px 358px,122px 344px,127px 329px,131px 321px,139px 315px,150px 312px,160px 312px,158px 336px,155px 368px,150px 406px,145px 443px,140px 471px,137px 487px,131px 509px,128px 523px,127px 536px,129px 547px,136px 553px,160px 557px,184px 555px,203px 557px,211px 549px,218px 531px,228px 455px,230px 435px,234px 421px,235px 415px,240px 410px,247px 411px,252px 420px,254px 436px,256px 455px,256px 499px,255px 525px,258px 549px,262px 556px,284px 556px,307px 555px,328px 554px,336px 539px,339px 521px,340px 475px,335px 424px,328px 375px,316px 327px,312px 299px,304px 274px,318px 261px,331px 250px,345px 232px,358px 215px,370px 191px,376px 172px,378px 159px,375px 143px,372px 132px,363px 123px,351px 119px,331px 116px,315px 122px,306px 130px,304px 140px,298px 176px,290px 188px,281px 197px,267px 205px,263px 201px,259px 195px,258px 189px,247px 197px,235px 203px,209px 211px,192px 211px,175px 210px);
+  }
+
+  .top-button {
+    z-index:2;
+    border:1px solid black;
+    clip-path: polygon(219px 228px,211px 235px,209px 247px,214px 257px,225px 265px,234px 264px,243px 259px,248px 252px,249px 242px,245px 232px,239px 227px,232px 224px,225px 225px);
+  }
+ .bot-button {
+  z-index:2;
+  border:1px solid black;
+  clip-path: polygon(241px 279px,232px 280px,223px 283px,218px 289px,218px 300px,223px 312px,236px 319px,246px 317px,253px 310px,256px 306px,257px 295px,255px 289px,246px 281px,237px 280px);
+   
+ }
+
+  .eye-left{
+    z-index:2;
+    background-color:black;
+    border:1px solid black;
+    clip-path: polygon(156px 123px,155px 129px,156px 134px,160px 140px,169px 143px,177px 138px,180px 131px,179px 124px,175px 116px,167px 116px,161px 118px);
+  }
+  .eyebrow-left{
+    z-index:2;
+    border:1px solid black;
+    clip-path: polygon(143px 104px,141px 110px,142px 117px,148px 119px,152px 114px,155px 108px,161px 104px,166px 103px,169px 99px,168px 92px,164px 89px,160px 89px,153px 91px,148px 95px,145px 100px);
+  }
+  .eye-right{
+    z-index:2;
+    background-color:black;
+    border:1px solid black;
+    clip-path: polygon(228px 94px,224px 98px,223px 102px,224px 108px,228px 115px,234px 118px,236px 116px,241px 116px,244px 114px,246px 110px,248px 105px,246px 98px,244px 94px,237px 92px,232px 93px);
+  }
+  .eyebrow-right{
+    z-index:2;
+    border:1px solid black;
+    clip-path: polygon(210px 77px,213px 83px,217px 83px,220px 82px,225px 80px,234px 80px,240px 82px,245px 79px,246px 75px,242px 70px,236px 66px,221px 66px,215px 69px,211px 73px);
+  }
+  .mouth-out{
+    z-index:2;
+    border:1px solid black;
+    clip-path: polygon(204px 173px,213px 173px,227px 169px,236px 164px,242px 157px,247px 151px,251px 141px,249px 135px,245px 127px,234px 126px,227px 131px,216px 137px,208px 142px,198px 143px,185px 146px,178px 148px,175px 153px,173px 158px,176px 166px,188px 171px,198px 173px);
+  }
+  .mouth-in{
+    z-index:3;
+    border:1px solid black;
+    background-color:white;
+    clip-path: polygon(211px 164px,220px 160px,227px 157px,234px 152px,239px 147px,241px 142px,240px 140px,238px 137px,236px 137px,231px 138px,230px 141px,220px 147px,214px 152px,206px 153px,197px 153px,190px 154px,187px 155px,185px 157px,185px 160px,191px 164px,208px 164px);
+  }
+
+  .eat-me{
+    position:absolute;
+    top:0;
+    right:0;
+    border: none;
+    background: none;
+    padding-left:20px;
+    padding-right:20px;
+    border-radius:20px;
+    color:white;
+    background-color: orangered;
+
+  }
+
+  .freak{
+    z-index: 1000000;
+    &.chest{
+      background-color: greenyellow;
+    }
+    &.head {
+      background-color: aquamarine;
+    }
+    &.eye-left{
+      background-color: goldenrod;
+    }
+    &.eye-right{
+      background-color:violet
+    }
+    &.eyebrow-left{
+      background-color:seagreen;
+    }
+    &.eyebrow-right{
+      background-color: navajowhite;
+    }
+    &.mouth-out{
+      background-color: red;
+    }
+  }

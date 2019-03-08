@@ -1,5 +1,17 @@
 .main-container{
-  padding:36px;
+  padding-top:12px;
+  padding-left:36px;
+  padding-right:36px;
+  margin-top: 100px;
+}
+
+.form-container{
+  position:fixed;
+  z-index:1000;
+  top:0;
+  left:0;
+  right:0;
+
   background-color:gainsboro;
 }
 
@@ -46,4 +58,17 @@
   text-align: center;
   background-color: orangered;
   color: white;
+}
+
+.random-button{
+  @extend .add-button;
+    transition: 0.1s ease-in-out;
+}
+
+*:focus{
+  outline: none;
+}
+
+.freak-cookie{
+  position:fixed;
 }

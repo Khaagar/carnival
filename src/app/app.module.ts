@@ -5,13 +5,13 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CarnivalComponent } from './components/carnival/carnival.component';
-import { ParticipantComponent } from './components/participant/participant.component';
+import { CookieComponent } from './components/cookieman/cookieman.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CarnivalComponent,
-    ParticipantComponent
+    CookieComponent
   ],
   imports: [
     BrowserModule,

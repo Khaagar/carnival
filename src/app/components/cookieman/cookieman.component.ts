@@ -11,6 +11,7 @@ export class CookieComponent implements OnInit {
   @Input() cookie: Cookieman;
 
   @Output('eated') eated: EventEmitter<any> = new EventEmitter();
+  @Output('burned') burned: EventEmitter<any> = new EventEmitter();
 
   constructor() { }
 
@@ -19,5 +20,9 @@ export class CookieComponent implements OnInit {
 
   eatMe(){
     this.eated.next(); 
+  }
+
+  burnMe() {
+    this.burned.emit();
   }
 }

@@ -1,0 +1,26 @@
+<div class="main-container d-flex flex-column">
+  <div class="form-container">
+    <form class="d-flex" [formGroup]="cookieForm">
+      <div [style.border-color]="cookieForm.get('bodyColor').value"  class="form-input d-flex flex-column">
+          <label [style.color]="cookieForm.get('bodyColor').value" for="bodyColor">Body color</label>
+          <input class="w-100" formControlName="bodyColor" name="bodyColor" type="text">
+      </div>
+      <div [style.border-color]="cookieForm.get('frostingColor').value" class="form-input d-flex flex-column">
+          <label [style.color]="cookieForm.get('frostingColor').value" for="frostingColor">Frosting color</label>
+          <input class="w-100" formControlName="frostingColor" name="frostingColor" type="text">
+      </div>
+      <div [style.border-color]="cookieForm.get('mouthColor').value" class="form-input d-flex flex-column">
+          <label [style.color]="cookieForm.get('mouthColor').value" for="mouthColor">Mouith color</label>
+          <input class="w-100" formControlName="mouthColor" name="mouthColor" type="text">
+      </div>
+      <button (click)="createCookie()" class="add-button" type="submit">ADD COOKIE</button>
+      <button (click)="randomCookie()" [style.background-color]="buttonColor" class="random-button" type="submit">RANDOM!</button>
+    </form>
+
+  </div>
+  <div class="cookies-container d-flex flex-wrap align-items-center justify-content-center">
+    <div *ngFor="let cookie of cookies; index as i;">
+      <app-cookieman (eated)="eatHim(i)" (burned)="burnHim(i)" [cookie]="cookie"></app-cookieman>
+    </div>
+  </div>
+  </div>

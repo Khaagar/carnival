@@ -1,15 +1,20 @@
 <div class="body d-flex flex-column align-items-center justify-content-center">
-  <button (click)="eatMe()" class="eat-me">
-    EAT HIM!
-  </button>
-  <div [style.background-color]="cookie? cookie.body : ''" class="head"></div>
-  <div [style.background-color]="cookie? cookie.body : ''" class="chest"></div>
+  <div class="buttons-container">
+      <button (click)="eatMe()" class="button">
+          EAT HIM!
+        </button>
+        <button (click)="burnMe()" class="button">
+          BURN HIM!
+        </button>
+  </div>
+  <div [style.background-color]="cookie? cookie.bodyColor : ''" class="head"></div>
+  <div [style.background-color]="cookie? cookie.bodyColor : ''" class="chest"></div>
   <div class="eye-left"></div>
   <div class="eye-right"></div>  
   <div class="mouth-in"></div>
-  <div [style.background-color]="cookie? cookie.mouth : ''" class="mouth-out"></div>
-  <div [style.background-color]="cookie? cookie.frosting : ''" class="eyebrow-left"></div>
-  <div [style.background-color]="cookie? cookie.frosting : ''" class="eyebrow-right"></div>
-  <div [style.background-color]="cookie? cookie.frosting : ''" class="top-button"></div>
-  <div [style.background-color]="cookie? cookie.frosting : ''" class="bot-button"></div>
+  <div [style.background-color]="cookie? cookie.mouthColor : ''" class="mouth-out"></div>
+  <div [style.background-color]="cookie? cookie.frostingColor : ''" class="eyebrow-left"></div>
+  <div [style.background-color]="cookie? cookie.frostingColor : ''" class="eyebrow-right"></div>
+  <div [style.background-color]="cookie? cookie.frostingColor : ''" class="top-button"></div>
+  <div [style.background-color]="cookie? cookie.frostingColor : ''" class="bot-button"></div>
 </div>

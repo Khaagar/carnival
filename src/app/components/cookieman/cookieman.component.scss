@@ -2,14 +2,15 @@
   width:424px;
   height:575px;
   position:relative;
+  margin:16px;
 }
 .body{
-  div{
+  div:not(.buttons-container){
     position:absolute;
     top:0;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: 15px;
     width:100%;
     height:100%;
   }
@@ -72,41 +73,23 @@
     clip-path: polygon(211px 164px,220px 160px,227px 157px,234px 152px,239px 147px,241px 142px,240px 140px,238px 137px,236px 137px,231px 138px,230px 141px,220px 147px,214px 152px,206px 153px,197px 153px,190px 154px,187px 155px,185px 157px,185px 160px,191px 164px,208px 164px);
   }
 
-  .eat-me{
+  .buttons-container{
     position:absolute;
-    top:0;
+    z-index: 3000;
+    bottom:0;
     right:0;
+    left:0;
+  }
+
+  .button{
     border: none;
     background: none;
     padding-left:20px;
+    height:50px;
+    width:100%;
     padding-right:20px;
     border-radius:20px;
+    margin:8px;
     color:white;
     background-color: orangered;
-
-  }
-
-  .freak{
-    z-index: 1000000;
-    &.chest{
-      background-color: greenyellow;
-    }
-    &.head {
-      background-color: aquamarine;
-    }
-    &.eye-left{
-      background-color: goldenrod;
-    }
-    &.eye-right{
-      background-color:violet
-    }
-    &.eyebrow-left{
-      background-color:seagreen;
-    }
-    &.eyebrow-right{
-      background-color: navajowhite;
-    }
-    &.mouth-out{
-      background-color: red;
-    }
   }
